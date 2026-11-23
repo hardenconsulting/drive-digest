@@ -1,0 +1,19 @@
+{
+  "name": "drive-digest",
+  "version": "1.0.0",
+  "description": "A delectable digest of your Drive, delivered straight to your mail",
+  "author": "Samuel Harden",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node test/run.js",
+    "push": "yarn build && clasp push"
+  },
+  "devDependencies": {
+    "@google/clasp": "^3.4.1",
+    "@types/google-apps-script": "^1.0.83",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3"
+  }
+}
